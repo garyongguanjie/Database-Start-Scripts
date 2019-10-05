@@ -9,7 +9,7 @@ create table Reviews(
     reviewTime VARCHAR(255) NOT NULL,
     reviewerID VARCHAR(255) NOT NULL,
     reviewerName VARCHAR(255) NOT NULL,
-    summary VARCHAR(25) NOT NULL,
+    summary VARCHAR(255) NOT NULL,
     unixReviewTime INT NOT NULL,
     PRIMARY KEY (id)
 );
