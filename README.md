@@ -1,0 +1,19 @@
+# Database-Start-Scripts
+Automated scripts to start databases
+Note:
+When running locally highly recommended to run it on a virtual machine.
+Set up on any ubuntu machine and in settings of VirtualBox change your vm settings to : Networks - > Bridge Adapter
+This will give your vm an ip address and you can connect to it directly.
+## mysql
+* mysqlserversetup.sh   
+  This sets up the database server, opens up the ports for external usage(optional prompt) and starts mysql on boot(optional prompt).
+* mysqldbsetup.sh   
+  This sets up the database and loads the csv file automatically into the database.
+
+How to run:
+```
+sudo bash mysqlserversetup.sh
+```
+```
+sudo bash mysqldbsetup.sh
+```
