@@ -1,8 +1,11 @@
 # Database-Start-Scripts
 Automated scripts to start databases
+
 Note:
 When running locally highly recommended to run it on a virtual machine.
+
 Set up on any ubuntu machine and in settings of VirtualBox change your vm settings to : Networks - > Bridge Adapter
+
 This will give your vm an ip address and you can connect to it directly.
 ## mysql
 * mysqlserversetup.sh   
