@@ -22,3 +22,17 @@ sudo bash mysqlserversetup.sh
 wget -c https://raw.githubusercontent.com/garyongguanjie/Database-Start-Scripts/master/mysql/mysqldbsetup.sh -O mysqldbsetup.sh
 sudo bash mysqldbsetup.sh
 ```
+## mongodb
+* mongodbserver.sh   
+  This sets up the database server, opens up the ports for external usage(optional prompt) and starts mongodb on boot(optional prompt).
+* mongodbsetup.sh   
+  This sets up the database and loads the csv file automatically into the database.
+How to run:
+```
+wget -c https://raw.githubusercontent.com/garyongguanjie/Database-Start-Scripts/master/mongodb/mongodbserver.sh -O mongodbserver.sh
+sudo bash mongodbserver.sh
+```
+```
+wget -c https://raw.githubusercontent.com/garyongguanjie/Database-Start-Scripts/master/mongodb/mongodbsetup.sh -O mongodbsetup.sh
+sudo bash mongodbsetup.sh
+```
