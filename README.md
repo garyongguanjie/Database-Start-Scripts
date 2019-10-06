@@ -15,8 +15,10 @@ This will give your vm an ip address and you can connect to it directly.
 
 How to run:
 ```
+wget -c https://raw.githubusercontent.com/garyongguanjie/Database-Start-Scripts/master/mysql/mysqlserversetup.sh -O mysqlserversetup.sh
 sudo bash mysqlserversetup.sh
 ```
 ```
+wget -c https://raw.githubusercontent.com/garyongguanjie/Database-Start-Scripts/master/mysql/mysqldbsetup.sh -O mysqldbsetup.sh
 sudo bash mysqldbsetup.sh
 ```
