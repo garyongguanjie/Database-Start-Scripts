@@ -1,6 +1,10 @@
 # Database-Start-Scripts
 Automated scripts to start databases
 
+Simple scripts to setup database with passwords and network connectivity.
+
+Please credit me if you use my scripts and give me a star on Github :)
+
 Note:
 When running locally highly recommended to run it on a virtual machine.
 
