@@ -22,6 +22,11 @@ sudo bash mysqlserversetup.sh
 wget -c https://raw.githubusercontent.com/garyongguanjie/Database-Start-Scripts/master/mysql/mysqldbsetup.sh -O mysqldbsetup.sh
 sudo bash mysqldbsetup.sh
 ```
+
+To login:
+```
+sudo mysql -u root -p
+```
 ## mongodb
 * mongodbserver.sh   
   This sets up the database server, opens up the ports for external usage(optional prompt) and starts mongodb on boot(optional prompt).
@@ -35,4 +40,9 @@ sudo bash mongodbserver.sh
 ```
 wget -c https://raw.githubusercontent.com/garyongguanjie/Database-Start-Scripts/master/mongodb/mongodbsetup.sh -O mongodbsetup.sh
 sudo bash mongodbsetup.sh
+```
+
+To login:
+```
+sudo mongo -u Admin -p --authenticationDatabase admin
 ```
