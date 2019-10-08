@@ -1,5 +1,5 @@
 #!/bin/bash
-#sudo apt-get update
+sudo apt-get update
 sudo apt-get install mysql-server -y
 read -p "Allow sql firewall passthrough(y/n)?" PASS
 if [ "$PASS" = "y" ] || [ "$PASS" == "Y" ]
