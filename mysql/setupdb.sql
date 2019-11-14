@@ -11,7 +11,8 @@ create table Reviews(
     reviewerName VARCHAR(255) NOT NULL,
     summary VARCHAR(255) NOT NULL,
     unixReviewTime INT NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    INDEX (asin)
 );
 
 LOAD DATA LOCAL INFILE 'kindle_reviews.csv'
