@@ -13,11 +13,13 @@ Set up on any ubuntu machine and in settings of VirtualBox change your vm settin
 This will give your vm an ip address and you can connect to it directly.
 ## mysql
 * mysqlserversetup.sh   
-  This sets up the database server, opens up the ports for external usage(optional prompt) and starts mysql on boot(optional prompt).
+  This sets up the database server, opens up the ports for external usage and starts mysql on boot.
 * mysqldbsetup.sh   
   This sets up the database and loads the csv file automatically into the database.
 
 How to run:
+
+some commands might request user permission. Use `yes | command` to get pass this.
 ```
 wget -c https://raw.githubusercontent.com/garyongguanjie/Database-Start-Scripts/master/mysql/mysqlserversetup.sh -O mysqlserversetup.sh
 sudo bash mysqlserversetup.sh
@@ -29,11 +31,11 @@ sudo bash mysqldbsetup.sh
 
 To login:
 ```
-sudo mysql -u root -p
+sudo mysql -u root
 ```
 ## mongodb
 * mongodbserver.sh   
-  This sets up the database server, opens up the ports for external usage(optional prompt) and starts mongodb on boot(optional prompt).
+  This sets up the database server, opens up the ports for external usage and starts mongodb on boot.
 * mongodbsetup.sh   
   This sets up the database and loads the csv file automatically into the database.
 How to run:
@@ -48,5 +50,5 @@ sudo bash mongodbsetup.sh
 
 To login:
 ```
-sudo mongo -u Admin -p --authenticationDatabase admin
+sudo mongo -u Admin
 ```
