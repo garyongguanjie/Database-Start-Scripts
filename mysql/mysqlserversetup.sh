@@ -1,6 +1,16 @@
 #!/bin/bash
-sudo apt update
-sudo apt install mysql-server -y
+EXIT_STATUS=1
+while [ "$EXIT_STATUS" -ne "0" ]
+do
+    sudo apt update
+    EXIT_STATUS=$?
+done
+EXIT_STATUS=1
+while [ "$EXIT_STATUS" -ne "0" ]
+do
+    sudo apt install mysql-server -y
+    EXIT_STATUS=$?
+done
 sudo ufw enable 
 sudo ufw allow ssh
 sudo ufw allow mysql #allow sql firewall 

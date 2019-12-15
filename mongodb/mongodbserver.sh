@@ -1,7 +1,17 @@
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
 echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
-sudo apt update
-sudo apt install -y mongodb-org
+EXIT_STATUS=1
+while [ "$EXIT_STATUS" -ne "0" ]
+do
+    sudo apt update
+    EXIT_STATUS=$?
+done
+EXIT_STATUS=1
+while [ "$EXIT_STATUS" -ne "0" ]
+do
+    sudo apt install -y mongodb-org
+    EXIT_STATUS=$?
+done
 sudo systemctl start mongod
 echo "server will now start on boot"
 sudo systemctl enable mongod
